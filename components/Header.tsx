@@ -4,6 +4,7 @@ import { Page } from '../types';
 import { MailIcon } from './icons/MailIcon';
 import { PhoneIcon } from './icons/PhoneIcon';
 import { LinkedinIcon } from './icons/LinkedinIcon';
+import { WhatsAppIcon } from './icons/WhatsAppIcon';
 import { LocationIcon } from './icons/LocationIcon';
 import { SummaryPage } from './pages/SummaryPage';
 import { PortfolioPage } from './pages/PortfolioPage';
@@ -42,9 +43,6 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) =
                     <span id="availability-light" className="w-2.5 h-2.5 rounded-full bg-green-500 transition-colors animate-pulse-green"></span>
                     <span id="availability-text" className="text-xs sm:text-sm text-gray-100">Open to work</span>
                 </div>
-                <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden self-end">
-                    {isMenuOpen ? <CloseIcon /> : <HamburgerIcon />}
-                </button>
             </div>
             
             {/* Mobile Menu */}
@@ -85,7 +83,9 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) =
                                     <span>linkedin.com/in/emmanuel-tay</span>
                                 </a>
                                 <div className="flex items-center space-x-3 text-text-secondary justify-center md:justify-start">
-                                    <LocationIcon className="animate-pulse-location" />
+                                    <div className="animate-pulse-location">
+                                        <LocationIcon />
+                                    </div>
                                     <span>Ghana, Accra</span>
                                 </div>
                             </div>
@@ -96,7 +96,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) =
                             <div className="w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden relative shadow-glow-home">
                                 {/* Using placeholder to ensure something is visible */}
                                 <img
-                                    src="SenaTay.png"
+                                    src="/SenaTay.png"
                                     alt="Portrait of Emmanuel Tay"
                                     className="w-full h-full object-cover"
                                 />
