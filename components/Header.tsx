@@ -7,7 +7,7 @@ import { LinkedinIcon } from './icons/LinkedinIcon';
 import { LocationIcon } from './icons/LocationIcon';
 import { SummaryPage } from './pages/SummaryPage';
 import { PortfolioPage } from './pages/PortfolioPage';
-import { DownloadIcon } from './icons/DownloadIcon';
+
 import { SkillsPage } from './pages/SkillsPage';
 import { LinksPage } from './pages/LinksPage';
 import { HamburgerIcon } from './icons/HamburgerIcon';
@@ -42,7 +42,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) =
                     <span id="availability-light" className="w-2.5 h-2.5 rounded-full bg-green-500 transition-colors animate-pulse-green"></span>
                     <span id="availability-text" className="text-xs sm:text-sm text-gray-100">Open to work</span>
                 </div>
-                <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden">
+                <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden self-end">
                     {isMenuOpen ? <CloseIcon /> : <HamburgerIcon />}
                 </button>
             </div>
