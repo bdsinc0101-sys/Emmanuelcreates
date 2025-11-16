@@ -96,7 +96,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) =
                             <div className="w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden relative shadow-glow-home">
                                 {/* Using placeholder to ensure something is visible */}
                                 <img
-                                    src="/Sena Tay.png"
+                                    src="Sena Tay.png"
                                     alt="Portrait of Emmanuel Tay"
                                     className="w-full h-full object-cover"
                                 />
