@@ -42,15 +42,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) =
                     <span id="availability-light" className="w-2.5 h-2.5 rounded-full bg-green-500 transition-colors animate-pulse-green"></span>
                     <span id="availability-text" className="text-xs sm:text-sm text-gray-100">Open to work</span>
                 </div>
-                <a href="#" className="flex items-center space-x-2 bg-accent text-primary font-bold py-1.5 px-5 rounded-lg text-xs sm:text-sm hover:bg-yellow-400 transition-all shadow-md">
-                    <DownloadIcon />
-                    <span>Download CV</span>
-                </a>
-            </div>
-
-            {/* Mobile Nav Button */}
-            <div className="md:hidden self-end mb-4 z-50">
-                <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden">
                     {isMenuOpen ? <CloseIcon /> : <HamburgerIcon />}
                 </button>
             </div>
@@ -103,9 +95,9 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) =
                         <div className="md:w-1/2 flex justify-center md:justify-end mt-12 md:mt-0">
                             <div className="w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden relative shadow-glow-home">
                                 {/* Using placeholder to ensure something is visible */}
-                                <img 
-                                    src="image/Sena Tay.png"
-                                    alt="Portrait of Emmanuel Tay" 
+                                <img
+                                    src="/Sena Tay.png"
+                                    alt="Portrait of Emmanuel Tay"
                                     className="w-full h-full object-cover"
                                 />
                             </div>

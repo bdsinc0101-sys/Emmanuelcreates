@@ -11,7 +11,7 @@ const contactDetails = [
     { name: 'Facebook', value: 'Emmanuel Tay', url: 'https://www.facebook.com/share/1F43QJk2iy/?mibextid=wwXIfr', icon: <FacebookIcon /> },
     { name: 'YouTube', value: 'Emmanuel Creates', url: 'https://www.youtube.com/@filmwithfriday', icon: <YouTubeIcon /> },
     { name: 'Behance', value: 'emmanueltay5', url: 'https://www.behance.net/emmanueltay5', icon: <BehanceIcon /> },
-    { name: 'WhatsApp', value: '0246052714', url: '#', icon: <WhatsAppIcon /> },
+    { name: 'WhatsApp', value: '0246052714', url: 'https://wa.me/233246052714', icon: <WhatsAppIcon /> },
 ];
 
 export const LinksPage: React.FC = () => {
