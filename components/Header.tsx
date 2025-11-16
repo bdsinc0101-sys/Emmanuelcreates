@@ -85,7 +85,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) =
                                     <span>linkedin.com/in/emmanuel-tay</span>
                                 </a>
                                 <div className="flex items-center space-x-3 text-text-secondary justify-center md:justify-start">
-                                    <LocationIcon />
+                                    <LocationIcon className="animate-pulse-location" />
                                     <span>Ghana, Accra</span>
                                 </div>
                             </div>
